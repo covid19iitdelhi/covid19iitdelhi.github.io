@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>IITD Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="navbar">
+  <a href="www.iitd.ac.in">IIT Delhi</a>
+  <a href="page2.html">Survey Form</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<h1> IIT Delhi Survey on COVID 19</h1>
+<div1>
+</br>
+
+    <form id="form" target="_self" onsubmit="return postToGoogle();" action="page3.html" autocomplete="off"> 
+<h2> PART A : UNIVERSITY COLLEGE AND RESIDENCE DETAILS </h2>
+<ol>
+  <li> Name and Address of your college/university (Please include name of the State where the institution belongs)
+
+      <input id = "college" type="text" placeholder="eg. Indian Institute of Technology, Delhi" name="entry.6305">
+      <input id="CollegeState" list="states" name="entry.1786621969" placeholder="State" type="text" required> 
+      <datalist id="states">, India.
+        <option value="Andaman and Nicobar Islands">
+        <option value="Andhra Pradesh">
+        <option value="Arunachal Pradesh">
+        <option value="Assam">
+        <option value=" Bihar">
+        <option value="Chandigarh">
+        <option value="Chhattisgarh">
+        <option value="Dadra and Nagar Haveli and Daman and Diu">
+        <option value="Delhi-NCR">
+        <option value="Gujarat">
+        <option value="Haryana">
+        <option value="Himachal Pradesh">
+        <option value="Jammu and Kashmir">
+        <option value="Jharkhand">
+        <option value="Karnataka">
+        <option value="Kerala">
+        <option value="Ladakh">
+        <option value="Lakshadweep">
+        <option value="Madhya Pradesh">
+        <option value="Maharashtra">
+        <option value="Manipur">
+        <option value="Meghalaya">
+        <option value="Mizoram">
+        <option value="Nagaland">
+        <option value="Odisha">
+        <option value="Puducherry">
+        <option value="Punjab">
+        <option value="Rajasthan">
+        <option value="Sikkim">
+        <option value="Tamil Nadu">
+        <option value="Telangana">
+        <option value="Tripura">
+        <option value="Uttar Pradesh">
+        <option value="Uttarakhand">
+        <option value="West Bengal">
+      </datalist>
+    </br>
+  </li>
+  <li> Please specify the Start and End time (in 24-hour format) of your college/university during normal working days.</br>
+    Start Time : <input type="time" id="startTime" name="entry.1786621969">
+    End Time : <input type="time" id="endTime" name="entry.393785043">
+  </li>
+  <li>
+    Information on your physical appearance.</br>
+    Height : <input type="number" id="heightfeet" min="0" max="9" name="entry.393785043"> feet <input type="number" id="heightinch" min="0" max="12" name="entry.1736541269"> inch.
+  </li>
+  <li>From which place do you travel to your college/university location before COVID19 lockdown?</br>
+  <input type="radio" id="placeToTravel" name="entry.1397015985" value="From Inside Campus (Staying in college provided hostels / married research scholar quarters)" /> From Inside Campus (Staying in college provided hostels / married research scholar quarters)</br>
+  <input type="radio" id="placeToTravel" name="entry.1397015985" value="From Outside Campus (Staying in private hostels, mess, flat or apartment outside campus)" /> From Outside Campus (Staying in private hostels, mess, flat or apartment outside campus)</br>
+  <input type="radio" id="placeToTravel" name="entry.1397015985" value="From your’s present residence" /> From your’s present residence</br>
+  <input type="radio" id="placeToTravel" name="entry.1397015985" value="None of the above" /> None of the above</br>
+  </li>
+  <li>
+    Address of present residence during COVID-19 lockdown :</br>
+<input id = "presentCity" type="text" placeholder="Address Line 1" name="8"></br>
+<input id = "presentDistrict" type="text" placeholder="Address Line 2" name="9"></br>
+<input id = "presentState" type="text" placeholder="STATE" list ="states" name="10"></br>
+<input id = "pincode" type="text" placeholder="PIN Code" name="11" pattern="[0-9]+"></br>
+  </li>
+</br>
+      <button id="send" type="submit" action="page3.html" class="common_btn">Next Page</button> 
+<!-- <button id="send" type="submit" class="common_btn">Register Now</button> -->
+      <!-- <button id="send" type="submit" class="common_btn">Register Now</button> -->
+       <!-- <a id="send" href="webpage2.html" type="submit"> Click Here for 2nd webpgae!</a> -->
+    </form>
+    <!-- <a href="page3.html" id="success-msg"> Here we go again </a> -->
+    <script>
+function postToGoogle() {
+                var field1 = $("#college").val();
+                var field2 = $("#CollegeState").val();
+                var field3 = $("#startTime").val();
+                var field4 = $("#endTime").val();
+                var height = $("#heightfeet").val() + "\'" + $("#heightinch").val() + "\"";
+                var field6 = $("#heightinch").val();
+                var field7 = document.getElementById("placeToTravel").value;
+                var field8 = $("#presentCity").val();
+                var field9 = $("#presentDistrict").val();
+                var field10 = $("#presentState").val();
+                var field11 = $("#pinCode").text();
+                var address = field8 + ", " + field9 + ", STATE - " + field10 + ", PIN - " + field11;
+                // var height = field5 + "' " + field6;
+                // var field4 = $("#placeToTravel option:selected").text();
+        
+        if(field1 == ""){
+          alert('Please Fill university details');
+          document.getElementById("college").focus();
+          return false;
+        }
+        if(field2 == ""){
+          alert('Please Fill State');
+          document.getElementById("CollegeState").focus();
+          return false;
+        }
+        if(field7 == "")
+        {
+          alert('Please select one option');
+          document.getElementById("placeToTravel").focus();
+          return false;
+        }
+        
+  
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSdn0C__bhtufyDheFgx6BfYhvyuL6EumgD62mze5M0ZJhbZdQ/formResponse?",
+          data: {"entry.630525043": field1, "entry.707736545": field2, "entry.1786621969": field3, "entry.393785043": field4, "entry.1789715397": height, "entry.1736541269": field7},
+
+
+             // data: {"entry.630525043": field1, "entry.707736545": field2, "entry.1786621969": field3, "entry.393785043": field4, "entry.393785043": height, "entry.1736541269":field7, "entry.1397015985":address},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+          {
+          },
+          error: function(x, y, z)
+            {
+// var result = str.link("https://www.w3schools.com");
+              $('#success-msg').show();
+              $('#form').hide();
+              window.open("page3.html", "_top");
+            }
+                });
+        return false;
+            }
+</script>
+
+
+  <!-- <a href="webpage2.html"> Click Here for 2nd webpgae!</a> -->
+  </body>
+</html>

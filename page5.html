@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IITD Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="navbar">
+  <a href="www.iitd.ac.in">IIT Delhi</a>
+  <a href="page2.html">Survey Form</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<h1> IIT Delhi Survey on COVID 19</h1>
+<div1>
+</br>
+    <form id="form" target="_self" onsubmit="return postToGoogle();" action="page6.html" autocomplete="off"> 
+<h2> PART D : TRAVEL DETAILS </h2>
+<ol>
+  <li> How do you usually (before the COVID-19 outbreak) travel to your school/college/university? (Single Choice)
+    <input type="radio" id="travelMode" name="entry.2345" value="On foot" /> On foot</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="By bicycle" /> By bicycle</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="By e-bike" /> By e-bike</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="By personal 2 –wheeler (owned by you)" /> By personal 2 wheeler (owned by you)</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="On Friend’s 2-wheeler" /> On Friend's 2 wheeler</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="By public transport (train, bus, metro etc.)" /> By public transport (train, bus, metro etc.)</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="By Para Transit (local auto, minivan, taxi, cycle rickshaw etc.)" /> By Para Transit (local auto, minivan, taxi, cycle rickshaw etc.)</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="By Personal Car (driving by myself)" /> By Personal Car (driving by myself)</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="By Personal Car (Driven by a family member / driver)" /> By Personal Car (Driven by a family member / driver)</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value=" By School/College provided Bus/Van/Auto etc." /> By School/College provided Bus/Van/Auto etc.</br>
+
+  <input type="radio" id="travelMode" name="entry.2345" value="Taxi / Ride-sourcing (Uber, Ola, Meru etc.)" /> Taxi / Ride-sourcing (Uber, Ola, Meru etc.)</br>
+
+    <input type="radio" id="travelMode" name="entry.2345" value="Park and ride (riding yourself using e-bike of commercial service provider such as Bounce, Vogo etc.) " /> Park and ride (riding yourself using e-bike of commercial service provider such as Bounce, Vogo etc.) </br>
+
+<input type="radio" id="travelMode" name="entry.2345" value="Other" /> Other (Please specify) : <input type="text" id="travelModeother" name="entry.2345" ></br>
+
+</li>
+<li>
+  <b>Time Taken to reach your school/college/university :</b> Please answer the duration for one way :</br>
+       <input id="TimeTaken" list="intervals" name="entry.1444621572" placeholder="Select" type="text" required>
+       <datalist id="intervals">
+      <option value="1-5min">
+      <option value="6-10min">
+      <option value="11-20min">
+      <option value="21-30min">
+      <option value="31-45min">
+        <option value="46-60min">
+      <option value="Longer than 90 min">
+        <option value="Not Sure">
+       </datalist>
+</li>
+</ol>
+
+<h2> PART E : SOCIO-DEMOGRAPHICS </h2>
+<ol>
+  <li>
+    Household Size? ( includes all family members staying with you during COVID 19)
+    <ul>
+      <li>No of Children below 13 years : <input id="people1" type="number" min='0'>  </li>
+      <li>No of Adults between 13-60 : <input id="people2" type="number" min='0'>  </li>
+      <li>No of Elderly members above 60 : <input id="people3" type="number" min='0'>  </li>
+    </ul>
+  </li>
+<li>
+  What is your gender?
+  <input id="gender" type="text" list="genders" name="entry.234" placeholder="Select">
+  <datalist id="genders">
+    <option value="Male">
+    <option value="Female">
+    <option value="Prefer not to say">
+  </datalist>
+</li>
+<li>
+  Completed Age? (Please provide year of birth) </br>
+  <input id="Age" type="text" name="entry.2345" placeholder="Age">
+</li>
+
+<li>
+  Highest Completed Educational Degree?</br>
+  <input id="degree" type="text" list="degrees" name="entry.2345" placeholder="Select">
+  <datalist id="degrees">
+    <option value="10th">
+    <option value="12th">
+    <option value="Diploma">
+    <option value="Graduate">
+    <option value="Master Degree(M.Phil., M.Sc., M.Tech.)">
+    <option value="Post Graduate and Above"> 
+  </datalist>
+</li>
+<li>
+  Your Marital Status?
+  <input id="marital" type="text" list="maritallist" name="entry.234" placeholder="Select">
+  <datalist id="maritallist">
+    <option value="Single">
+    <option value="Married">
+    <option value="Widowed">
+    <option value="Divorced/Separated">
+    <option value="Prefer not to answer">
+  </datalist>
+</li>
+<li>
+  Present Employment Status of your Parents?</br>
+  <ul>
+    <li> Father : <input id="Fstatus" type="text" list="employments" name="entry.12345" placeholder="Select"></li></br>
+    <li> Mother : <input id="Mstatus" type="text" list="employments" name="entry.12345" placeholder="Select"></li>
+    <datalist id="employments">
+      <option value="Full Time Employed(Government)">
+      <option value="Full Time Employed(Private)">
+      <option value="Self Employed (Farmer / Fishing / Shop Keeper / Industrialist)">
+      <option value="Retired">
+      <option value="Part Time Employed">
+      <option value="Looking for Employment">
+      <option value="Home maker (House wife)">
+      <option value="Prefer not to answer">
+    </datalist>
+</li>
+
+<li> Household Income Per Month (in Indian Rupees)?</br>
+  <input type="text" id="Income" list="incomerange" name="entry.234" placeholder="Select">
+  <datalist id="incomerange">
+    <option value="Less than 10,000">
+    <option value="10,000 - 25,000">
+    <option value="25,001 - 40,000">
+    <option value="40,001 - 60,000">
+    <option value="60,001 - 1 Lakh">
+    <option value="More than 1 Lakh">
+  </datalist>
+</li>
+<li>
+  Household Vehicle Ownership Details</br>
+  <ul>
+    <li>
+      No. of Cars : <input id="Cars" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+      <li> No. of 2 Wheelers (Bike) : <input id="bikes" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+      <li> No. of Bicycles : <input id="bicycles" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+      <li> Other Vehicles eg. Auto : <input id="auto" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+    </ul>
+    <datalist id="count">
+      <option value="0">
+      <option value="1">
+      <option value="2">
+      <option value="More than 2">
+    </datalist>
+</li>
+<li>
+  Do you own a Driving License?
+  <input type="text" list="Bool" id="dlicense" name="entry.234" placeholder="Select">
+  <datalist id="dlicense">
+    <option value="Yes">
+    <option value="No">
+</li>
+</ol>
+      <button id="send" type="submit" class="common_btn">Next Page</button> 
+<!-- <button id="send" type="submit" class="common_btn">Register Now</button> -->
+      <!-- <button id="send" type="submit" class="common_btn">Register Now</button> -->
+       <!-- <a id="send" href="webpage2.html" type="submit"> Click Here for 2nd webpgae!</a> -->
+    </form>
+    
+    <script>
+function postToGoogle() {
+                var field1 = $("#college").val();
+                var field2 = $("#CollegeState").val();
+                var field3 = $("#startTime").text();
+                var field4 = $("#endTime").text();
+                var field5 = $("#heightfeet").text();
+                var field6 = $("#heightinch").text();
+                var field7 = document.getElementById("placeToTravel");
+                var field8 = $("#presentCity").val();
+                var field9 = $("#presentDistrict").val();
+                var field10 = $("#presentState").val();
+                var field11 = $("#pinCode").text();
+
+
+                // var field4 = $("#placeToTravel option:selected").text();
+        
+        if(field1 == ""){
+          alert('Please Fill university details');
+          document.getElementById("college").focus();
+          return false;
+        }
+        if(field2 == ""){
+          alert('Please Fill State');
+          document.getElementById("CollegeState").focus();
+          return false;
+        }
+        if(field7 == "")
+        {
+          alert('Please select one option');
+          document.getElementById("placeToTravel").focus();
+          return false;
+        }
+        
+  
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSdWDdKfpfA_KPALSciUdjmMS7nSUjNRrWxDhtdPI8q2kxPlUg/formResponse",
+          data: {"entry.1136718742": field1, "entry.1444621572": field2},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+          {
+          },
+          error: function(x, y, z)
+            {
+
+              // $('#success-msg').show();
+              // $('#form').hide();
+              
+            }
+                });
+        return true;
+            }
+</script>
+
+</div>
+  <!-- <a href="webpage2.html"> Click Here for 2nd webpgae!</a> -->
+  </body>
+</html>

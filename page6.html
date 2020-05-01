@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IITD Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="navbar">
+  <a href="www.iitd.ac.in">IIT Delhi</a>
+  <a href="page2.html">Survey Form</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<h1> IIT Delhi Survey on COVID 19</h1>
+<div1>
+</br>
+    <form id="form" target="_self" onsubmit="return postToGoogle();" action="thankyou.html" autocomplete="off"> 
+<h2> PART E : PERCEPTION BASED QUESTIONS </h2>
+<ol>
+  <li> Please indicate your level of agreement for the following statements.</br>
+  <table style="text-align: center">
+  <tr>
+    <th> <b>Leisure Item</b> </th>
+    <th> Your level of agreement</th>
+  </tr>
+  <tr>
+    <td> Engaging in Leisure activities is a wise use of time.</td>
+    <td> <input id="agreement1" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+    <tr>
+    <td> Leisure activities are not beneficial to individual and society</td>
+    <td> <input id="agreement2" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+    <tr>
+    <td> Leisure activities contributes to one’s health and happiness</td>
+    <td> <input id="agreement3" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+    <tr>
+    <td> Leisure activities are good opportunities for social contacts</td>
+    <td> <input id="agreement4" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+    <tr>
+    <td> Leisure activities help’s to renew one’s energy and work productivity.</td>
+    <td> <input id="agreement5" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+    <tr>
+    <td> I engage in leisure activities even when I am busy.</td>
+    <td> <input id="agreement6" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+    <tr>
+    <td> Given a choice, I would increase the time spent in Leisure activities.</td>
+    <td> <input id="agreement7" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+    <tr>
+    <td> I don’t do leisure activities frequently.</td>
+    <td> <input id="agreement8" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+    <tr>
+    <td> I give my leisure time high priority.</td>
+    <td> <input id="agreement9" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+  </tr>
+    <tr>
+    <td> I feel that spending time on leisure activities is a waste.</td>
+    <td> <input id="agreement10" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+  <datalist id="aglevels">
+    <option value="Strongly Disagree">
+    <option value="Disagree">
+    <option value="Neutral">
+    <option value="Agree">
+    <option value="Strongly Agree">
+  </datalist>
+    </table>
+</li>
+
+<li>
+  How would you rate the following questions on Personal Wellbeing during the Covid 19 lockdown period?
+  <table>
+    <tr>
+      <th> Personal Well-being Index Items </th>
+      <th> Level of Satisfaction </th>
+    </tr>
+    <tr>
+      <td>Standard of living</td>
+      <td><input id="satis1" list="satislevels" name="entry.23423" placeholder="Select"></td>
+    </tr>
+    <tr>
+      <td>Health condition</td>
+      <td><input id="satis2" list="satislevels" name="entry.23423" placeholder="Select"></td>
+    </tr>
+    <tr>
+      <td>Able to tackle daily problems and much needed break</td>
+      <td><input id="satis3" list="satislevels" name="entry.23423" placeholder="Select"></td>
+    </tr>
+    <tr>
+      <td>Relationships with family members</td>
+      <td><input id="satis4" list="satislevels" name="entry.23423" placeholder="Select"></td>
+    </tr>
+    <tr>
+      <td>Safety of yours and your family members</td>
+      <td><input id="satis5" list="satislevels" name="entry.23423" placeholder="Select"></td>
+    </tr>
+    <tr>
+      <td>Community Connectedness during COVID Pandemic</td>
+      <td><input id="satis6" list="satislevels" name="entry.23423" placeholder="Select"></td>
+    </tr>
+    <tr>
+      <td>Security measures by Govt. to limit the spread of COVID</td>
+      <td><input id="satis7" list="satislevels" name="entry.23423" placeholder="Select"></td>
+    </tr>
+    <tr>
+      <td>Your strength/energy to see through such times</td>
+      <td><input id="satis8" list="satislevels" name="entry.23423" placeholder="Select"></td>
+    </tr>
+  </table>
+</li>
+
+<li>
+  What is your level of anxiety experienced during COVID 19 pandemic?
+  <table>
+      <tr>
+    <th> <b>Anxiety Items</b> </th>
+    <th> Level of agreement</th>
+  </tr>
+  <tr>
+    <td> I feel nervous and anxious</td>
+    <td> <input id="agc1" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+  <tr>
+    <td> I am afraid for no reason</td>
+    <td> <input id="agc2" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+  <tr>
+    <td> I am upset and feel panicked with the current situation</td>
+    <td> <input id="agc3" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+  <tr>
+    <td> My life is falling apart during this emergency time</td>
+    <td> <input id="agc4" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+  <tr>
+    <td> I stay calm and think clearly.</td>
+    <td> <input id="agc5" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+  <tr>
+    <td> I am fresh and generally have a good night’s rest.</td>
+    <td> <input id="agc6" list="aglevels" name="entry.2343" placeholder="Select"></td>
+  </tr>
+  </table>
+</li>
+
+</ol>
+      <button id="send" type="submit" class="common_btn">Submit</button> 
+<!-- <button id="send" type="submit" class="common_btn">Register Now</button> -->
+      <!-- <button id="send" type="submit" class="common_btn">Register Now</button> -->
+       <!-- <a id="send" href="webpage2.html" type="submit"> Click Here for 2nd webpgae!</a> -->
+    </form>
+    
+    <script>
+function postToGoogle() {
+                var field1 = $("#college").val();
+                var field2 = $("#CollegeState").val();
+                var field3 = $("#startTime").text();
+                var field4 = $("#endTime").text();
+                var field5 = $("#heightfeet").text();
+                var field6 = $("#heightinch").text();
+                var field7 = document.getElementById("placeToTravel");
+                var field8 = $("#presentCity").val();
+                var field9 = $("#presentDistrict").val();
+                var field10 = $("#presentState").val();
+                var field11 = $("#pinCode").text();
+
+
+                // var field4 = $("#placeToTravel option:selected").text();
+        
+        if(field1 == ""){
+          alert('Please Fill university details');
+          document.getElementById("college").focus();
+          return false;
+        }
+        if(field2 == ""){
+          alert('Please Fill State');
+          document.getElementById("CollegeState").focus();
+          return false;
+        }
+        if(field7 == "")
+        {
+          alert('Please select one option');
+          document.getElementById("placeToTravel").focus();
+          return false;
+        }
+        
+  
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSdWDdKfpfA_KPALSciUdjmMS7nSUjNRrWxDhtdPI8q2kxPlUg/formResponse",
+          data: {"entry.1136718742": field1, "entry.1444621572": field2},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+          {
+          },
+          error: function(x, y, z)
+            {
+
+              // $('#success-msg').show();
+              // $('#form').hide();
+              
+            }
+                });
+        return true;
+            }
+</script>
+
+</div>
+  <!-- <a href="webpage2.html"> Click Here for 2nd webpgae!</a> -->
+  </body>
+</html>
