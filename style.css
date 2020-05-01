@@ -62,9 +62,9 @@ table, th, td {
 	border-collapse: collapse;
 }
 
-table {
+/*table {
 	width: 100%;
-}
+}*/
 
 button {
 	text-align: center;
@@ -72,4 +72,8 @@ button {
 
 input[type=text], input[type=number] {
 	height: 23px;
+}
+
+table td.expand, th.expand {
+	width: 50%
 }

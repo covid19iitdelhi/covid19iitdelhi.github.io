@@ -9,6 +9,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <style>
+        	th.shrink, td.shrink {
+        		white-space: wrap;
+        	}
+        	th.expand, td.expand {
+        		width: 70%;
+        		white-space: wrap;
+        	}
+        	input {
+        		width: 100%;
+        		align-content: center;
+        	}
         </style>
 </head>
 <body>
@@ -29,20 +40,20 @@
 <b> <i>For Example :</i></b> Yesterday, if you watched Mahabharat on TV and Avengers movie on your laptop which in total makes <b>1 episode of <i>‘Watching TV’</i> and 1 episode of <i>‘Using computer for leisure’.</i> The total time spent is 1hr of <i>TV</i> and 2hr 10 min of <i>Using Computer for Leisure</i>.</b></br>
 <table >
   <tr>
-    <th rowspan="3">Suggested Activities</th>
+    <th class="expand" rowspan="3">Suggested Activities</th>
     <th colspan="3"> During COVID Lockdown</th>
   </tr>
   <tr>
-    <th rowspan="2"> No. of Episodes done yesterday</th>
-    <th colspan="2"> Total Time Spent</th>
+    <th class="shrink" rowspan="2"> No. of Episodes done yesterday</th>
+    <th class="shrink" colspan="2"> Total Time Spent</th>
   </tr>
   <tr>
     <th > hours </th>
     <th > Min. </th>
   </tr>
   <tr>
-    <td> Watching Television</td>
-    <td> <input id="Act1Ep1" type="text" name="entry.2345">
+    <td class="expand"> Watching Television</td>
+    <td style="text-align:center"> <input id="Act1Ep1" type="text" name="entry.2345">
     </td>
     <td> <input id="Act1h1" type="text" name="entry.2345">
     </td>
@@ -51,7 +62,7 @@
   </tr>
 
   <tr>
-    <td> Use the computer for leisure (surf in the internet, watch videos, MSN); Playing games in mobile / TV / Computer</td>
+    <td class="expand"> Use the computer for leisure (surf in the internet, watch videos, MSN); Playing games in mobile / TV / Computer</td>
     <td> <input id="Act1Ep2" type="text" name="entry.2345">
     </td>
     <td> <input id="Act1h2" type="text" name="entry.2345">
@@ -61,7 +72,7 @@
   </tr>
 
   <tr>
-    <td> Using computer for educational purposes, Self-studying after college hours; Taking a course or taking online lessons; teaching young ones.</td>
+    <td class="expand"> Using computer for educational purposes, Self-studying after college hours; Taking a course or taking online lessons; teaching young ones.</td>
     <td> <input id="Act1Ep3" type="text" name="entry.2345">
     </td>
     <td> <input id="Act1h3" type="text" name="entry.2345">
@@ -71,7 +82,7 @@
   </tr>
 
   <tr>
-    <td>Chatting with friends on Phone or in Watsapp, Facebook, Zoom or in other
+    <td class="expand">Chatting with friends on Phone or in Watsapp, Facebook, Zoom or in other
 social networking sites</td>
     <td> <input id="Act1Ep4" type="text" name="entry.2345">
     </td>
@@ -82,7 +93,7 @@ social networking sites</td>
   </tr>
 
   <tr>
-    <td>Sitting around; Hanging out with friends; listening to music; Religious
+    <td class="expand">Sitting around; Hanging out with friends; listening to music; Religious
 activities</td>
     <td> <input id="Act1Ep5" type="text" name="entry.2345">
     </td>
@@ -93,7 +104,7 @@ activities</td>
   </tr>
 
   <tr>
-    <td>Reading Newspaper, Novels or other articles / books in your leisure</td>
+    <td class="expand">Reading Newspaper, Novels or other articles / books in your leisure</td>
     <td> <input id="Act1Ep6" type="text" name="entry.2345">
     </td>
     <td> <input id="Act1h6" type="text" name="entry.2345">
@@ -103,7 +114,7 @@ activities</td>
   </tr>
 
   <tr>
-    <td>Playing Board games such as Chess, Carrom etc</td>
+    <td class="expand">Playing Board games such as Chess, Carrom etc</td>
     <td> <input id="Act1Ep7" type="text" name="entry.2345">
     </td>
     <td> <input id="Act1h7" type="text" name="entry.2345">
@@ -113,7 +124,7 @@ activities</td>
   </tr>
 
     <tr>
-    <td>Doing Handicraft, Origami or Playing / Learning a musical instrument</td>
+    <td class="expand">Doing Handicraft, Origami or Playing / Learning a musical instrument</td>
     <td> <input id="Act1Ep8" type="text" name="entry.2345">
     </td>
     <td> <input id="Act1h8" type="text" name="entry.2345">

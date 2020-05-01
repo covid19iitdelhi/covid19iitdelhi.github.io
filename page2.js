@@ -71,7 +71,7 @@ function postToGoogle() {
           error: function(x, y, z)
             {
 // var result = str.link("https://www.w3schools.com");
-              $("data Colleced!").show();
+              $("data Collected").show();
               $('#form').hide();
               window.open("page3.html", "_top");
             }
