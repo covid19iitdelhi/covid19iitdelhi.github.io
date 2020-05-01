@@ -19,39 +19,39 @@
 <div1>
 </br>
     <form id="form" target="_self" onsubmit="return postToGoogle();" action="page6.html" autocomplete="off"> 
-<h2> PART D : TRAVEL DETAILS </h2>
+<h3> PART D : TRAVEL DETAILS </h3>
 <ol>
-  <li> How do you usually (before the COVID-19 outbreak) travel to your school/college/university? (Single Choice)
-    <input type="radio" id="travelMode" name="entry.2345" value="On foot" /> On foot</br>
+  <li> How do you usually (before the COVID-19 outbreak) travel to your school/college/university? (Single Choice)</br>
+    <input type="radio" id="rd1" name="entry.2345" value="On foot" /> On foot</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="By bicycle" /> By bicycle</br>
+  <input type="radio" id="rd2" name="entry.2345" value="By bicycle" /> By bicycle</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="By e-bike" /> By e-bike</br>
+  <input type="radio" id="rd3" name="entry.2345" value="By e-bike" /> By e-bike</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="By personal 2 –wheeler (owned by you)" /> By personal 2 wheeler (owned by you)</br>
+  <input type="radio" id="rd4" name="entry.2345" value="By personal 2 –wheeler (owned by you)" /> By personal 2 wheeler (owned by you)</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="On Friend’s 2-wheeler" /> On Friend's 2 wheeler</br>
+  <input type="radio" id="rd5" name="entry.2345" value="On Friend’s 2-wheeler" /> On Friend's 2 wheeler</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="By public transport (train, bus, metro etc.)" /> By public transport (train, bus, metro etc.)</br>
+  <input type="radio" id="rd6" name="entry.2345" value="By public transport (train, bus, metro etc.)" /> By public transport (train, bus, metro etc.)</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="By Para Transit (local auto, minivan, taxi, cycle rickshaw etc.)" /> By Para Transit (local auto, minivan, taxi, cycle rickshaw etc.)</br>
+  <input type="radio" id="rd7" name="entry.2345" value="By Para Transit (local auto, minivan, taxi, cycle rickshaw etc.)" /> By Para Transit (local auto, minivan, taxi, cycle rickshaw etc.)</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="By Personal Car (driving by myself)" /> By Personal Car (driving by myself)</br>
+  <input type="radio" id="rd8" name="entry.2345" value="By Personal Car (driving by myself)" /> By Personal Car (driving by myself)</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="By Personal Car (Driven by a family member / driver)" /> By Personal Car (Driven by a family member / driver)</br>
+  <input type="radio" id="rd9" name="entry.2345" value="By Personal Car (Driven by a family member / driver)" /> By Personal Car (Driven by a family member / driver)</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value=" By School/College provided Bus/Van/Auto etc." /> By School/College provided Bus/Van/Auto etc.</br>
+  <input type="radio" id="rd10" name="entry.2345" value=" By School/College provided Bus/Van/Auto etc." /> By School/College provided Bus/Van/Auto etc.</br>
 
-  <input type="radio" id="travelMode" name="entry.2345" value="Taxi / Ride-sourcing (Uber, Ola, Meru etc.)" /> Taxi / Ride-sourcing (Uber, Ola, Meru etc.)</br>
+  <input type="radio" id="rd11" name="entry.2345" value="Taxi / Ride-sourcing (Uber, Ola, Meru etc.)" /> Taxi / Ride-sourcing (Uber, Ola, Meru etc.)</br>
 
-    <input type="radio" id="travelMode" name="entry.2345" value="Park and ride (riding yourself using e-bike of commercial service provider such as Bounce, Vogo etc.) " /> Park and ride (riding yourself using e-bike of commercial service provider such as Bounce, Vogo etc.) </br>
+    <input type="radio" id="rd12" name="entry.2345" value="Park and ride (riding yourself using e-bike of commercial service provider such as Bounce, Vogo etc.) " /> Park and ride (riding yourself using e-bike of commercial service provider such as Bounce, Vogo etc.) </br>
 
-<input type="radio" id="travelMode" name="entry.2345" value="Other" /> Other (Please specify) : <input type="text" id="travelModeother" name="entry.2345" ></br>
+<input type="radio" id="rd13" name="entry.2345" value="Other" /> Other (Please specify) : <input type="text" id="rd13text" name="entry.2345" ></br>
 
 </li>
 <li>
   <b>Time Taken to reach your school/college/university :</b> Please answer the duration for one way :</br>
-       <input id="TimeTaken" list="intervals" name="entry.1444621572" placeholder="Select" type="text" required>
+       <input id="TimeTaken" list="intervals" name="entry.1444621572" placeholder="Select" type="text">
        <datalist id="intervals">
       <option value="1-5min">
       <option value="6-10min">
@@ -65,7 +65,7 @@
 </li>
 </ol>
 
-<h2> PART E : SOCIO-DEMOGRAPHICS </h2>
+<h3> PART E : SOCIO-DEMOGRAPHICS </h3>
 <ol>
   <li>
     Household Size? ( includes all family members staying with you during COVID 19)
@@ -164,66 +164,13 @@
     <option value="No">
 </li>
 </ol>
-      <button id="send" type="submit" class="common_btn">Next Page</button> 
+      <button id="send" type="submit" class="container">Next Page</button> 
 <!-- <button id="send" type="submit" class="common_btn">Register Now</button> -->
       <!-- <button id="send" type="submit" class="common_btn">Register Now</button> -->
        <!-- <a id="send" href="webpage2.html" type="submit"> Click Here for 2nd webpgae!</a> -->
     </form>
     
-    <script>
-function postToGoogle() {
-                var field1 = $("#college").val();
-                var field2 = $("#CollegeState").val();
-                var field3 = $("#startTime").text();
-                var field4 = $("#endTime").text();
-                var field5 = $("#heightfeet").text();
-                var field6 = $("#heightinch").text();
-                var field7 = document.getElementById("placeToTravel");
-                var field8 = $("#presentCity").val();
-                var field9 = $("#presentDistrict").val();
-                var field10 = $("#presentState").val();
-                var field11 = $("#pinCode").text();
-
-
-                // var field4 = $("#placeToTravel option:selected").text();
-        
-        if(field1 == ""){
-          alert('Please Fill university details');
-          document.getElementById("college").focus();
-          return false;
-        }
-        if(field2 == ""){
-          alert('Please Fill State');
-          document.getElementById("CollegeState").focus();
-          return false;
-        }
-        if(field7 == "")
-        {
-          alert('Please select one option');
-          document.getElementById("placeToTravel").focus();
-          return false;
-        }
-        
-  
-                $.ajax({
-                    url: "https://docs.google.com/forms/d/e/1FAIpQLSdWDdKfpfA_KPALSciUdjmMS7nSUjNRrWxDhtdPI8q2kxPlUg/formResponse",
-          data: {"entry.1136718742": field1, "entry.1444621572": field2},
-                    type: "POST",
-                    dataType: "xml",
-                    success: function(d)
-          {
-          },
-          error: function(x, y, z)
-            {
-
-              // $('#success-msg').show();
-              // $('#form').hide();
-              
-            }
-                });
-        return true;
-            }
-</script>
+    <script>src="page5.js"</script>
 
 </div>
   <!-- <a href="webpage2.html"> Click Here for 2nd webpgae!</a> -->
