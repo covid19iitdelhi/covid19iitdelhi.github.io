@@ -69,3 +69,7 @@ table {
 button {
 	text-align: center;
 }
+
+input[type=text], input[type=number] {
+	height: 23px;
+}
