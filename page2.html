@@ -52,7 +52,7 @@
     <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
 <h3> PART A : UNIVERSITY COLLEGE AND RESIDENCE DETAILS </h3>
 <ol>
-  <li> Name and Address of your college/university (Please include name of the State where the institution belongs)</br>
+  <li> Name of the Institution and State</br>
       <input id = "college" type="text" placeholder="eg. Indian Institute of Technology, Delhi" name="manoj1">
       <input id="CollegeState" list="states" name="manoj" placeholder="State" type="text"> 
       <datalist id="states">, India.
@@ -95,8 +95,8 @@
     </br>
   </li>
   <li> Please specify the Start and End time (in 24-hour format) of your college/university during normal working days.</br>
-    Start Time : <input type="time" id="startTime" name="entry.1786621969">
-    End Time : <input type="time" id="endTime" name="entry.393785043"></br>
+    Start Time : <input style="width: 30px" type="number" id="startTime1" name="entry.1786621969" min="0" max="23">:<input style="width: 30px" type="number" id="startTime2" name="entry.1786621969" min="0" max="59"></br>
+    End Time : <input style="width: 30px" type="number" id="endTime1" name="entry.1786621969" min="0" max="23">:<input style="width: 30px" type="number" id="endTime2" name="entry.1786621969" min="0" max="59"></br>
   </li>
 
 
@@ -127,18 +127,18 @@
   </li>
 
 
-  <li>From which place do you travel to your college/university location before COVID19 lockdown?</br>
+  <!-- <li>From which place do you travel to your college/university location before COVID19 lockdown?</br>
   <input type="radio" id="rd1" name="entry.1397015985" value="From Inside Campus (Staying in college provided hostels / married research scholar quarters)" /> From Inside Campus (Staying in college provided hostels / married research scholar quarters)</br>
   <input type="radio" id="rd2" name="entry.1397015985" value="From Outside Campus (Staying in private hostels, mess, flat or apartment outside campus)" /> From Outside Campus (Staying in private hostels, mess, flat or apartment outside campus)</br>
   <input type="radio" id="rd3" name="entry.1397015985" value="From your’s present residence" /> From your’s present residence</br>
   <input type="radio" id="rd4" name="entry.1397015985" value="None of the above" /> None of the above</br>
-  </li>
+  </li> -->
   <li>
     Address of present residence during COVID-19 lockdown :</br>
-<input id = "addline1" type="text" placeholder="Address Line 1" name="8"></br>
-<input id = "addline2" type="text" placeholder="Address Line 2" name="9"></br>
+<input id = "addline1" type="text" placeholder="Location" name="8"></br>
+<!-- <input id = "addline2" type="text" placeholder="Address Line 2" name="9"></br> -->
 <input id = "presentState" type="text" placeholder="STATE" list ="states" name="10"></br>
-<input id = "pincode" type="text" placeholder="PIN Code" name="11" pattern="[0-9]+"></br>
+<!-- <input id = "pincode" type="text" placeholder="PIN Code" name="11" pattern="[0-9]+"></br> -->
   </li>
 </br>
      

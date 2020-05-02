@@ -7,6 +7,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href ="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+        	th.shrink, td.shrink {
+        		align-content: center;
+        		white-space: wrap;
+        	}
+        	th.expand, td.expand {
+        		width: 70%;
+        		white-space: wrap;
+        	}
+        	input {
+        		width: 100%;
+        		align-content: center;
+        	}
+        </style>
 </head>
 <body>
 <div class="navbar">
@@ -18,14 +32,14 @@
 <h1> IIT Delhi Survey on COVID 19</h1>
 <div1>
 </br>
-    <form id="form" target="_self" onsubmit="return postToGoogle();" action="thankyou.html" autocomplete="off"> 
-<h2> PART E : PERCEPTION BASED QUESTIONS </h2>
+    <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
+<h2> PART F : PERCEPTION BASED QUESTIONS </h2>
 <ol>
   <li> Please indicate your level of agreement for the following statements.</br>
-  <table style="text-align: center">
+  <table>
   <tr>
-    <th> <b>Leisure Item</b> </th>
-    <th> Your level of agreement</th>
+    <th class="expand"> <b>Leisure Item</b> </th>
+    <th class ="shrink"> Your level of agreement</th>
   </tr>
   <tr>
     <td> Engaging in Leisure activities is a wise use of time.</td>
@@ -82,8 +96,8 @@
   How would you rate the following questions on Personal Wellbeing during the Covid 19 lockdown period?
   <table>
     <tr>
-      <th> Personal Well-being Index Items </th>
-      <th> Level of Satisfaction </th>
+      <th class="expand"> Personal Well-being Index Items </th>
+      <th class="shrink"> Level of Satisfaction </th>
     </tr>
     <tr>
       <td>Standard of living</td>
@@ -117,6 +131,13 @@
       <td>Your strength/energy to see through such times</td>
       <td><input id="satis8" list="satislevels" name="entry.23423" placeholder="Select"></td>
     </tr>
+    <datalist id="satislevels">
+    	<option value="Highly Dissatisfied">
+    	<option value="Dissatisfied">
+    	<option value="Can't Say">
+    	<option value="Satisfied">
+    	<option value="Highly Satisfied">	
+    </datalist>
   </table>
 </li>
 
@@ -124,8 +145,8 @@
   What is your level of anxiety experienced during COVID 19 pandemic?
   <table>
       <tr>
-    <th> <b>Anxiety Items</b> </th>
-    <th> Level of agreement</th>
+    <th class="expand"> <b>Anxiety Items</b> </th>
+    <th class="shrink"> Level of agreement</th>
   </tr>
   <tr>
     <td> I feel nervous and anxious</td>
@@ -161,8 +182,7 @@
        <!-- <a id="send" href="webpage2.html" type="submit"> Click Here for 2nd webpgae!</a> -->
     </form>
     
-    <script>src="page6.js"</script>
-
+    <script src="page6.js"></script>
 </div>
   <!-- <a href="webpage2.html"> Click Here for 2nd webpgae!</a> -->
   </body>

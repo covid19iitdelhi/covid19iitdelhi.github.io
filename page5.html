@@ -18,10 +18,10 @@
 <h1> IIT Delhi Survey on COVID 19</h1>
 <div1>
 </br>
-    <form id="form" target="_self" onsubmit="return postToGoogle();" action="page6.html" autocomplete="off"> 
+    <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
 <h3> PART D : TRAVEL DETAILS </h3>
 <ol>
-  <li> How do you usually (before the COVID-19 outbreak) travel to your school/college/university? (Single Choice)</br>
+ <li> How do you usually (before the COVID-19 outbreak) travel to your school/college/university? (Single Choice)</br>
     <input type="radio" id="rd1" name="entry.2345" value="On foot" /> On foot</br>
 
   <input type="radio" id="rd2" name="entry.2345" value="By bicycle" /> By bicycle</br>
@@ -46,7 +46,7 @@
 
     <input type="radio" id="rd12" name="entry.2345" value="Park and ride (riding yourself using e-bike of commercial service provider such as Bounce, Vogo etc.) " /> Park and ride (riding yourself using e-bike of commercial service provider such as Bounce, Vogo etc.) </br>
 
-<input type="radio" id="rd13" name="entry.2345" value="Other" /> Other (Please specify) : <input type="text" id="rd13text" name="entry.2345" ></br>
+<input type="radio" id="rd13" name="entry.2345" value="Other" /> Other (Please specify) : <input type="text" id="other" name="entry.2345" ></br>
 
 </li>
 <li>
@@ -69,7 +69,7 @@
 
 
 <h3> PART E : SOCIO-DEMOGRAPHICS </h3>
-<ol>
+  <ol>
   <li>
     Household Size? ( includes all family members staying with you during COVID 19)
     <ul>
@@ -78,7 +78,7 @@
       <li>No of Elderly members above 60 : <input id="people3" type="number" min='0'>  </li>
     </ul>
   </li>
-<li>
+ <li>
   What is your gender?
   <input id="gender" type="text" list="genders" name="entry.234" placeholder="Select">
   <datalist id="genders">
@@ -86,13 +86,13 @@
     <option value="Female">
     <option value="Prefer not to say">
   </datalist>
-</li>
-<li>
+ </li>
+ <li>
   Completed Age? (Please provide year of birth) </br>
-  <input id="Age" type="text" name="entry.2345" placeholder="Age">
-</li>
+  <input id="age" type="text" name="entry.2345" placeholder="Age">
+ </li>
 
-<li>
+ <li>
   Highest Completed Educational Degree?</br>
   <input id="degree" type="text" list="degrees" name="entry.2345" placeholder="Select">
   <datalist id="degrees">
@@ -103,8 +103,8 @@
     <option value="Master Degree(M.Phil., M.Sc., M.Tech.)">
     <option value="Post Graduate and Above"> 
   </datalist>
-</li>
-<li>
+ </li>
+ <li>
   Your Marital Status?
   <input id="marital" type="text" list="maritallist" name="entry.234" placeholder="Select">
   <datalist id="maritallist">
@@ -114,8 +114,8 @@
     <option value="Divorced/Separated">
     <option value="Prefer not to answer">
   </datalist>
-</li>
-<li>
+	</li>
+	<li>
   Present Employment Status of your Parents?</br>
   <ul>
     <li> Father : <input id="Fstatus" type="text" list="employments" name="entry.12345" placeholder="Select"></li></br>
@@ -130,11 +130,11 @@
       <option value="Home maker (House wife)">
       <option value="Prefer not to answer">
     </datalist>
-</ul>
-</li>
+ </ul>
+ </li>
 
-<li> Household Income Per Month (in Indian Rupees)?</br>
-  <input type="text" id="Income" list="incomerange" name="entry.234" placeholder="Select">
+ <li> Household Income Per Month (in Indian Rupees)?</br>
+  <input type="text" id="income" list="incomerange" name="entry.234" placeholder="Select">
   <datalist id="incomerange">
     <option value="Less than 10,000">
     <option value="10,000 - 25,000">
@@ -143,12 +143,12 @@
     <option value="60,001 - 1 Lakh">
     <option value="More than 1 Lakh">
   </datalist>
-</li>
-<li>
+ </li>
+ <li>
   Household Vehicle Ownership Details</br>
   <ul>
     <li>
-      No. of Cars : <input id="Cars" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+      No. of Cars : <input id="cars" type="text" list="count" name="entry.23423" placeholder="Select"></li>
       <li> No. of 2 Wheelers (Bike) : <input id="bikes" type="text" list="count" name="entry.23423" placeholder="Select"></li>
       <li> No. of Bicycles : <input id="bicycles" type="text" list="count" name="entry.23423" placeholder="Select"></li>
       <li> Other Vehicles eg. Auto : <input id="auto" type="text" list="count" name="entry.23423" placeholder="Select"></li>
@@ -159,10 +159,10 @@
       <option value="2">
       <option value="More than 2">
     </datalist>
-</li>
-<li>
+ </li>
+ <li>
   Do you own a Driving License?
-  <input type="text" list="bool" id="dlicense" name="entry.234" placeholder="Select">
+  <input type="text" list="bool" id="license" name="entry.234" placeholder="Select">
   <datalist id="bool">
     <option value="Yes">
     <option value="No">
@@ -174,7 +174,7 @@
        <!-- <a id="send" href="webpage2.html" type="submit"> Click Here for 2nd webpgae!</a> -->
     </form>
     
-    <script>src="page5.js"</script>
+    <script src="page5.js"></script>
 
 </div>
   <!-- <a href="webpage2.html"> Click Here for 2nd webpgae!</a> -->

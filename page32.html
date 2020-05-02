@@ -1,4 +1,89 @@
-function postToGoogle1() {
+<!DOCTYPE html>
+<html>
+<head>
+   <title>IITD Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href ="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <style>
+        	th.shrink, td.shrink {
+        		white-space: wrap;
+        	}
+        	th.expand, td.expand {
+        		width: 70%;
+        		white-space: wrap;
+        	}
+        	input {
+        		width: 100%;
+        		align-content: center;
+        	}
+        </style>
+</head>
+<body>
+<div class="navbar">
+  <a href="http://www.iitd.ac.in/">IIT Delhi</a>
+  <a href="page2.html">Survey Form</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<h1> IIT Delhi Survey on COVID 19</h1>
+</br>
+
+<h3> PART B : ACTIVITY TIME USE DETAILS DURING LOCKDOWN PERIOD </h3>
+<ul>
+
+
+<div id="div2">
+<li>
+  During the COVID lockdown period, how frequently do you eat and sleep; and on an average how many hours in total did you spend in doing these activities.
+    <form id="form2" target="_self" onsubmit="return postToGoogle2();" action="" autocomplete="off"> 
+<table>
+  <tr>
+    <th class="expand" rowspan="3">Suggested Activities</th>
+    <th colspan="3"> During COVID Lockdown</th>
+  </tr>
+  <tr>
+    <th class="shrink" rowspan="2"> No. of Episodes done yesterday</th>
+    <th class="shrink" colspan="2"> Total Time Spent</th>
+  </tr>
+  <tr>
+    <th> hours </th>
+    <th> Min. </th>
+  </tr>
+  <tr>
+    <td>Eating your breakfast/light snacks; lunch/dinner; drinking tea, juice etc.</td>
+    <td> <input id="Act2Ep1" type="text" name="entry.2345"></td>
+    <td> <input id="Act2h1" type="text" name="entry.2345"></td>
+    <td> <input id="Act2m1" type="text" name="entry.2345"></td>
+  </tr>
+  <tr>
+    <td>Sleeping / resting on sofa/couch; taking small naps; sleeping on bed</td>
+    <td> <input id="Act2Ep2" type="text" name="entry.2345"></td>
+    <td> <input id="Act2h2" type="text" name="entry.2345"></td>
+    <td> <input id="Act2m2" type="text" name="entry.2345"></td>
+  </tr>
+    <tr>
+    <td>Personal care that includes bathing, grooming yourself like pedicure, manicure,
+	haircut etc., washing your clothes</td>
+    <td> <input id="Act2Ep3" type="text" name="entry.2345"></td>
+    <td> <input id="Act2h3" type="text" name="entry.2345"></td>
+    <td> <input id="Act2m3" type="text" name="entry.2345"></td>
+  </tr>
+
+</table>
+<button id="send" type="submit" class="container">Submit</button> 
+</form>
+</li>
+</div>
+
+</ul>   
+        <!-- <script src="page3.js"></script> -->
+<!-- <script>
+        	function postToGoogle1() {
 	        var Act1Ep1 = $("#Act1Ep1").val();
                 var Act1h1 = $("#Act1h1").val();
                 var Act1m1 = $("#Act1m1").val();
@@ -59,8 +144,9 @@ function postToGoogle1() {
                 });
                 return false;
 }
-
-function postToGoogle2()
+</script> -->
+<script>
+	function postToGoogle2()
 	{
 	alert("calling postToGoogle2");
 	$('#div2').hide();
@@ -78,6 +164,7 @@ function postToGoogle2()
                 var Act2Ep3 = $("#Act2Ep3").val();
                 var Act2h3 = $("#Act2h3").val();
                 var Act2m3 = $("#Act2m3").val();
+// return false;
                 $.ajax({
                     url: "https://docs.google.com/forms/d/e/1FAIpQLSe027RAc-YIo4sjEyRv95J6Lf9I6oEx0yKOvm1dSgjL31Ew0Q/formResponse?",
           data: {"entry.828826895": Act2Ep1, "entry.1893407105": Act2h1, "entry.2031946838": Act2m1,
@@ -98,82 +185,11 @@ function postToGoogle2()
                 });
                 return false;
 	}
-function postToGoogle3() {
-	alert("caaling postToGoogle3");
-	// $('#div3').hide();
-
- var Act3Ep1 = $("#Act3Ep1").val();
-                var Act3h1 = $("#Act3h1").val();
-                var Act3m1 = $("#Act3m1").val();
-
-                var Act3Ep2 = $("#Act3Ep2").val();
-                var Act3h2 = $("#Act3h2").val();
-                var Act3m2 = $("#Act3m2").val();
-
-                var Act3Ep3 = $("#Act3Ep3").val();
-                var Act3h3 = $("#Act3h3").val();
-                var Act3m3 = $("#Act3m3").val();
-
-                var Act3Ep4 = $("#Act3Ep4").val();
-                var Act3h4 = $("#Act3h4").val();
-                var Act3m4 = $("#Act3m4").val();
-
-                var Act3Ep5 = $("#Act3Ep5").val();
-                var Act3h5 = $("#Act3h5").val();
-                var Act3m5 = $("#Act3m5").val();
-
-                var Act3Ep6 = $("#Act3Ep6").val();
-                var Act3h6 = $("#Act3h6").val();
-                var Act3m6 = $("#Act3m6").val();
-
-                var Act3Ep7 = $("#Act3Ep7").val();
-                var Act3h7 = $("#Act3h7").val();
-                var Act3m7 = $("#Act3m7").val();
-
-                var Act3Ep8 = $("#Act3Ep8").val();
-                var Act3h8 = $("#Act3h8").val();
-                var Act3m8 = $("#Act3m8").val();
-
-                var Act3Ep9 = $("#Act3Ep9").val();
-                var Act3h9 = $("#Act3h9").val();
-                var Act3m9 = $("#Act3m9").val();
-
-                var Act3Ep10 = $("#Act3Ep10").val();
-                var Act3h10 = $("#Act3h10").val();
-                var Act3m10 = $("#Act3m10").val();
-
-                var Act3Ep11 = $("#Act3Ep11").val();
-                var Act3h11 = $("#Act3h11").val();
-                var Act3m11 = $("#Act3m11").val();
-	
-	$.ajax({
-                    url: "https://docs.google.com/forms/d/e/1FAIpQLSepfJRUW5sqqxBUjP-C3L5k1UKQbO_wfa91uFH5gqheODOsFg/formResponse?",
-          data: {"entry.1240983519": Act3Ep1, "entry.383180612": Act3h1, "entry.1544578175": Act3m1, 
-                    "entry.2131394848": Act3Ep2, "entry.1816358712": Act3h2, "entry.2117956502": Act3m2,
-                    "entry.763708774": Act3Ep3, "entry.915345378": Act3h3, "entry.791929017": Act3m3,
-                "entry.1210355126": Act3Ep4, "entry.485366456": Act3h4, "entry.1968149439": Act3m4,
-                "entry.2145866749": Act3Ep5, "entry.2039028117": Act3h5, "entry.1964228224": Act3m5,
-            "entry.1462921509": Act3Ep6, "entry.1864361906": Act3h6, "entry.337755629": Act3m6,    
-            "entry.504852015": Act3Ep7, "entry.736994120": Act3h7, "entry.1808288161": Act3m7,
-            "entry.252017369": Act3Ep8, "entry.529850838": Act3h8, "entry.1574401359": Act3m8,
-            "entry.1242205847": Act3Ep9, "entry.244738212": Act3h9, "entry.1410458934": Act3m9,
-            "entry.250939805": Act3Ep10, "entry.839624857": Act3h10, "entry.1828980499": Act3m10,
-            "entry.1582245921": Act3Ep11, "entry.1596036032": Act3h11, "entry.1071599023": Act3m11},
-                    type: "POST",
-                    dataType: "xml",
-                    success: function(d)
-          {
-          },
-          error: function(x, y, z)
-            {
-              // $("data Colleced!").show();
-              // $('#div3').hide();
-              window.open("page4.html", "_top");
-            }
-                });
+</script>
 
 
 
+  <!-- <a href="webpage2.html"> Click Here for 2nd webpgae!</a> -->
+  </body>
+</html>
 
-        return false;
-}
