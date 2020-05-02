@@ -100,7 +100,7 @@ function postToGoogle() {
           },
           error: function(x, y, z)
             {
-            	alert("Data Colleced2!!");
+            	// alert("Data Colleced2!!");
               // $("data Colleced!").show();
               // $('#div3').hide();
               // window.open("page5.html", "_top");
@@ -118,7 +118,7 @@ function postToGoogle() {
           },
           error: function(x, y, z)
             {
-            	alert("Data Colleced2!!");
+            	// alert("Data Colleced2!!");
               // $("data Colleced!").show();
               // $('#div3').hide();
               window.open("page6.html", "_top");

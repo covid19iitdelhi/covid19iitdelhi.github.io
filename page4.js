@@ -1,5 +1,5 @@
 function postToGoogle1() {
-	alert("calling postToGoogle1");
+	// alert("calling postToGoogle1");
 	        	var Act1Ep1 = $("#Act1Ep1").val();
                 var Act1h1 = $("#Act1h1").val();
                 var Act1m1 = $("#Act1m1").val();
@@ -92,7 +92,7 @@ function postToGoogle1() {
           },
           error: function(x, y, z)
             {
-            	alert("Data Colleced!!");
+            	// alert("Data Colleced!!");
               // $("data Colleced!").show();
               // $('#div1').hide();
               // window.open("contact.html", "_top");
@@ -118,7 +118,7 @@ function postToGoogle1() {
           },
           error: function(x, y, z)
             {
-            	alert("Data Colleced2!!");
+            	// alert("Data Colleced2!!");
               // $("data Colleced!").show();
               $('#div1').hide();
               // window.open("contact.html", "_top");
@@ -145,12 +145,12 @@ function postToGoogle2() {
                 var Act2h3 = $("#Act2h3").val();
                 var Act2m3 = $("#Act2m3").val();
 
- alert(Act2Ep3);
+ // alert(Act2Ep3);
 
                 var Act22Ep1 = $("#Act22Ep1").val();
                 var Act22h1 = $("#Act22h1").val();
                 var Act22m1 = $("#Act22m1").val();
-	alert(Act22Ep1);
+	// alert(Act22Ep1);
                 var Act22Ep2 = $("#Act22Ep2").val();
                 var Act22h2 = $("#Act22h2").val();
                 var Act22m2 = $("#Act22m2").val();
@@ -289,7 +289,7 @@ function postToGoogle3() {
                 var Act23h11 = $("#Act23h11").val();
                 var Act23m11 = $("#Act23m11").val(); 
 
-                alert("calling postToGoogle1"+Act3Ep1);
+                // alert("calling postToGoogle1"+Act3Ep1);
                 $.ajax(
                 {
                     url: "https://docs.google.com/forms/d/e/1FAIpQLSf9XJv1eQdM7BskB1SEjkWQheccv7H4PJDMVlKM8LchrLKwyA/formResponse?",
@@ -309,7 +309,7 @@ function postToGoogle3() {
           },
           error: function(x, y, z)
             {
-            	alert("Data Colleced!!");
+            	// alert("Data Colleced!!");
               // $("data Colleced!").show();
               // $('#div3').hide();
               // window.open("contact.html", "_top");
@@ -335,7 +335,7 @@ function postToGoogle3() {
           },
           error: function(x, y, z)
             {
-            	alert("Data Colleced2!!");
+            	// alert("Data Colleced2!!");
               // $("data Colleced!").show();
               // $('#div3').hide();
               window.open("page5.html", "_top");
