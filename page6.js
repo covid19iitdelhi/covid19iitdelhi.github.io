@@ -1,5 +1,5 @@
       function postToGoogle() {
-    // alert("Hii Manoj");
+
                 var agreement1 = $("#agreement1").val();
                 var agreement2 = $("#agreement2").val();
                 var agreement3 = $("#agreement3").val();
@@ -50,10 +50,7 @@
           },
           error: function(x, y, z)
             {
-                // alert("Data Colleced2!!");
-              // $("data Colleced!").show();
-              // $('#div3').hide();
-              // window.open("page5.html", "_top");
+
             }
                 });
                 //part 2 start
@@ -99,7 +96,7 @@
           },
           error: function(x, y, z)
             {
-                alert("Data Colleced2!!");
+                alert("Response has been recorded!!");
               // $("data Colleced!").show();
               // $('#div3').hide();
               window.open("thankyou.html", "_top");
