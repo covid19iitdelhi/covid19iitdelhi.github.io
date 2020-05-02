@@ -11,31 +11,31 @@
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <style>
-        	@media (min-width: 400px) {
-        		#college {
-        		width:300px;
-	        	}
-	        	#CollegeState {
-	        		width:100px;
-	        	}
-        	}
-        	
-        	@media (max-width: 399px)
-        	{
-        		#college {
-        			width:65%;
-        		}
-        		#CollegeState {
-        			width:25%;
-        		}
-        	}
-        	#heightfeet, #heightinch, #weight, #startTime, #endTime  {
-        		width: 70px;
-        		height: 23px;
-        	}
-        	#addline1, #addline2, #presentState, #pincode {
-        		height: 23px;
-        	}
+            @media (min-width: 400px) {
+                #college {
+                width:300px;
+                }
+                #CollegeState {
+                    width:100px;
+                }
+            }
+            
+            @media (max-width: 399px)
+            {
+                #college {
+                    width:65%;
+                }
+                #CollegeState {
+                    width:25%;
+                }
+            }
+            #heightfeet, #heightinch, #weight, #startTime, #endTime  {
+                width: 70px;
+                height: 23px;
+            }
+            #addline1, #addline2, #presentState, #pincode {
+                height: 23px;
+            }
         </style>
 </head>
 <body>
@@ -103,26 +103,26 @@
   <li>
     Information on your physical appearance.</br>
     <ul>
-    	<li>
+        <li>
     Height : <input type="text" id="heightfeet" list="num" name="entry.393785043"> feet <input type="text" id="heightinch" list="num" name="entry.1736541269"> inch.
     <datalist id="num">
-    	<option value="0">
-    	<option value="1">
-    	<option value="2">
-    	<option value="3">
-    	<option value="4">
-    	<option value="5">
-    	<option value="6">
-    	<option value="7">
-    	<option value="8">
-    	<option value="9">
-    	<option value="10">
-    	<option value="11">
+        <option value="0">
+        <option value="1">
+        <option value="2">
+        <option value="3">
+        <option value="4">
+        <option value="5">
+        <option value="6">
+        <option value="7">
+        <option value="8">
+        <option value="9">
+        <option value="10">
+        <option value="11">
     </datalist>
-	</li>
-	<li>
-		Weight : <input type="text" id="weight" name="w" > Kg
-	</li>
+    </li>
+    <li>
+        Weight : <input type="text" id="weight" name="w" > Kg
+    </li>
 </ul>
   </li>
 
@@ -150,7 +150,84 @@
     </form>
     <h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Your Request has been posted to Google Spreadsheet</h3>
     <!-- <a href="page3.html" id="success-msg"> Here we go again </a> -->
-    <script src="page2.js"></script>
+    <script>
+        function postToGoogle() {
+                var college1 = $("#college").val();
+        //         var CollegeState = $("#CollegeState").val();
+        //         var startTime = $("#startTime").val();
+        //         var endTime = $("#endTime").val();
+        //         var height = $("#heightfeet").val() + "\'" + $("#heightinch").val() + "\"";
+        //         var weight = $("#weight").val();
+        //         var place;// = document.getElementById("placeToTravel").value;
+        //         var rd1 = document.getElementById("rd1");
+        //         var rd2 = document.getElementById("rd2");
+        //         var rd3 = document.getElementById("rd3");
+        //         var rd4 = document.getElementById("rd4");
+        //         if(rd1.checked==true)
+        //         {
+        //             place = document.getElementById("rd1").value;
+        //         }
+        //         else if(rd2.checked==true)
+        //         {
+        //             place = document.getElementById("rd2").value;
+        //         }
+        //         else if(rd3.checked==true)
+        //         {
+        //             place = document.getElementById("rd3").value;
+        //         }
+        //         else if(rd4.checked==true)
+        //         {
+        //             place = document.getElementById("rd4").value;
+        //         }
+        //         else {
+        //             alert("Please select one option!");
+        //             return false;
+        //         }
+        //         var addline1 = $("#addline1").val();
+        //         var addline2 = $("#addline2").val();
+        //         var presentState = $("#presentState").val();
+        //         var pinCode = $("#pinCode").text();
+        
+        // if(college == ""){
+        //   alert('Please Fill university details');
+        //   document.getElementById("college").focus();
+        //   return false;
+        // }
+        // if(CollegeState == ""){
+        //   alert('Please Fill State');
+        //   document.getElementById("CollegeState").focus();
+        //   return false;
+        // }
+        // if(place == "")
+        // {
+        //   alert('Please select one option');
+        //   document.getElementById("place").focus();
+        //   return false;
+        // }
+        
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSdm8VwwB78KuId5iP5um8cgR4avO4w3quJ4c4O9IwHOXtBqbQ/formResponse?",
+          data: {"entry.1649819554": college1},//, "entry.591722219": CollegeState, "entry.484089851": startTime, "entry.1473222291": endTime, "entry.460946191": height, "entry.349050934": weight, "entry.349050934": place, "entry.611337322": addline1, "entry.274257086": addline2, "entry.1217447060": presentState, "entry.1892486679":pinCode},
+
+
+             // data: {"entry.630525043": field1, "entry.707736545": field2, "entry.1786621969": field3, "entry.393785043": field4, "entry.393785043": height, "entry.1736541269":field7, "entry.1397015985":address},
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+          {
+          },
+          error: function(x, y, z)
+            {
+                alert("college");
+// var result = str.link("https://www.w3schools.com");
+              // $("data Collected").show();
+              $('#form').hide();
+              window.open("contact.html", "_top");
+            }
+                });
+        return false;
+            }
+    </script>
 
   <!-- <a href="webpage2.html"> Click Here for 2nd webpgae!</a> -->
   </body>

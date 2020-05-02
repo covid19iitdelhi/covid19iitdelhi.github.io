@@ -29,20 +29,9 @@ function postToGoogle() {
 
                 var Act1Ep8 = $("#Act1Ep8").val();
                 var Act1h8 = $("#Act1h8").val();
-                var Act1m8 = $("#Act1m8").val();  
-
-                var Act1Ep9 = $("#Act1Ep9").val();
-                var Act1h9 = $("#Act1h9").val();
-                var Act1m9 = $("#Act1m9").val();
-
-                var Act1Ep10 = $("#Act1Ep10").val();
-                var Act1h10 = $("#Act1h10").val();
-                var Act1m10 = $("#Act1m10").val();
-
-                var Act1Ep11 = $("#Act1Ep11").val();
-                var Act1h11 = $("#Act1h11").val();
-                var Act1m11 = $("#Act1m11").val();      
-  
+                var Act1m8 = $("#Act1m8").val();        
+                alert("Manoj yahaan");
+                return false;
                 $.ajax({
                     url: "https://docs.google.com/forms/d/e/1FAIpQLSfwDUXbJamNzb3ZdVwjnfmZMjWIEQterjAlf0tz729FRSYkSA/formResponse?",
           data: {"entry.589313327": Act1Ep1, "entry.1081643634": Act1h1, "entry.1477727669": Act1m1, 
@@ -61,9 +50,9 @@ function postToGoogle() {
           error: function(x, y, z)
             {
 // var result = str.link("https://www.w3schools.com");
-              // $("data Colleced!").show();
+              $("data Colleced!").show();
               // $('#form').hide();
-              // window.open("page4.html", "_top");
+              window.open("page4.html", "_top");
             }
                 });
 

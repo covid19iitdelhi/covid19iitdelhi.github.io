@@ -6,7 +6,20 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href ="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+	th.shrink, td.shrink {
+        		white-space: wrap;
+        	}
 
+th.expand, td.expand {
+        		width: 70%;
+        		white-space: wrap;
+        	}
+	input {
+        		width: 100%;
+        		align-content: center;
+        	}
+        </style>
 </head>
 <body>
 <div class="navbar">
@@ -24,18 +37,18 @@
   <li> How did you spend your time on the following sedentary activities on a weekday before COVID 19 lockdown i.e. before March 22, 2020?
 <table>
   <tr>
-    <th rowspan="4">Suggested Activities</th>
+    <th class="expand" rowspan="4">Suggested Activities</th>
     <th colspan="6"> Before COVID Lockdown</th>
   </tr>
     <tr>
-    <th colspan="3">INSIDE HOME/HOSTEL</th>
-    <th colspan="3"> OUT-OF-HOME/HOSTEL</th>
+    <th class="shrink" colspan="3">INSIDE HOME/HOSTEL</th>
+    <th class="shrink" colspan="3"> OUT-OF-HOME/HOSTEL</th>
   </tr>
   <tr>
-    <th rowspan="2"> No. of Episodes done on a Weekday</th>
-    <th colspan="2"> Total Time Spent</th>
-    <th rowspan="2"> No. of Episodes done on a Weekday</th>
-    <th colspan="2"> Total Time Spent</th>
+    <th class="shrink" rowspan="2"> No. of Episodes done on a Weekday</th>
+    <th class="shrink" colspan="2"> Total Time Spent</th>
+    <th class="shrink" rowspan="2"> No. of Episodes done on a Weekday</th>
+    <th class="shrink" colspan="2"> Total Time Spent</th>
   </tr>
   <tr>
     <th> hours </th>
@@ -51,11 +64,11 @@
     </td>
     <td> <input id="Act1m1" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep1" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep1" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h1" type="text" name="entry.2345">
+    <td> <input id="2Act1h1" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m1" type="text" name="entry.2345">
+    <td> <input id="2Act1m1" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -67,11 +80,11 @@
     </td>
     <td> <input id="Act1m2" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep2" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep2" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h2" type="text" name="entry.2345">
+    <td> <input id="2Act1h2" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m2" type="text" name="entry.2345">
+    <td> <input id="2Act1m2" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -83,11 +96,11 @@
     </td>
     <td> <input id="Act1m3" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep3" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep3" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h3" type="text" name="entry.2345">
+    <td> <input id="2Act1h3" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m3" type="text" name="entry.2345">
+    <td> <input id="2Act1m3" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -100,11 +113,11 @@ social networking sites</td>
     </td>
     <td> <input id="Act1m4" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep4" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep4" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h4" type="text" name="entry.2345">
+    <td> <input id="2Act1h4" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m4" type="text" name="entry.2345">
+    <td> <input id="2Act1m4" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -117,11 +130,11 @@ activities</td>
     </td>
     <td> <input id="Act1m5" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep5" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep5" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h5" type="text" name="entry.2345">
+    <td> <input id="2Act1h5" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m5" type="text" name="entry.2345">
+    <td> <input id="2Act1m5" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -133,11 +146,11 @@ activities</td>
     </td>
     <td> <input id="Act1m6" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep6" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep6" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h6" type="text" name="entry.2345">
+    <td> <input id="2Act1h6" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m6" type="text" name="entry.2345">
+    <td> <input id="2Act1m6" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -149,11 +162,11 @@ activities</td>
     </td>
     <td> <input id="Act1m7" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep7" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep7" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h7" type="text" name="entry.2345">
+    <td> <input id="2Act1h7" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m7" type="text" name="entry.2345">
+    <td> <input id="2Act1m7" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -165,11 +178,11 @@ activities</td>
     </td>
     <td> <input id="Act1m8" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep8" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep8" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h8" type="text" name="entry.2345">
+    <td> <input id="2Act1h8" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m8" type="text" name="entry.2345">
+    <td> <input id="2Act1m8" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -181,11 +194,11 @@ activities</td>
     </td>
     <td> <input id="Act1m9" type="text" name="entry.2345">
     </td>
-        <td> <input id="Act1Ep9" type="text" name="entry.2345">
+        <td> <input id="2Act1Ep9" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1h9" type="text" name="entry.2345">
+    <td> <input id="2Act1h9" type="text" name="entry.2345">
     </td>
-    <td> <input id="Act1m9" type="text" name="entry.2345">
+    <td> <input id="2Act1m9" type="text" name="entry.2345">
     </td>
   </tr>
 
@@ -197,7 +210,7 @@ activities</td>
   Before the COVID lockdown period, how frequently did you do the following activities on a weekday; and on an average how many hours in total did you spend in doing these activities.
   <table>
   <tr>
-    <th rowspan="4">Suggested Activities</th>
+    <th class="expand" rowspan="4">Suggested Activities</th>
     <th colspan="6"> Before COVID Lockdown</th>
   </tr>
     <tr>
@@ -251,18 +264,18 @@ haircut etc., washing your clothes</td>
   Please specify the no. of episodes and time spent in various Physical Activities listed below distributed across a 24-hour week day before the lockdown period.
     <table>
   <tr>
-    <th rowspan="4">Suggested Activities</th>
-    <th colspan="6"> Before COVID Lockdown</th>
+    <th class="expand" rowspan="4">Suggested Activities</th>
+    <th class="shrink" colspan="6"> Before COVID Lockdown</th>
   </tr>
     <tr>
-    <th colspan="3">INSIDE HOME/HOSTEL</th>
-    <th colspan="3"> OUT-OF-HOME/HOSTEL</th>
+    <th class="shrink" colspan="3">INSIDE HOME/HOSTEL</th>
+    <th class="shrink" colspan="3"> OUT-OF-HOME/HOSTEL</th>
   </tr>
   <tr>
-    <th rowspan="2"> No. of Episodes done on a Weekday</th>
-    <th colspan="2"> Total Time Spent</th>
-    <th rowspan="2"> No. of Episodes done on a Weekday</th>
-    <th colspan="2"> Total Time Spent</th>
+    <th class="shrink" rowspan="2"> No. of Episodes done on a Weekday</th>
+    <th class="shrink" colspan="2"> Total Time Spent</th>
+    <th class="shrink" rowspan="2"> No. of Episodes done on a Weekday</th>
+    <th class="shrink" colspan="2"> Total Time Spent</th>
   </tr>
   <tr>
     <th> hours </th>
