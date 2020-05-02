@@ -33,7 +33,7 @@
 
 <h1> IIT Delhi Survey on COVID 19</h1>
 </br>
-    <form id="form" target="_self" onsubmit="return postToGoogle1();" action="" autocomplete="off"> 
+    <form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
 <h3> PART B : ACTIVITY TIME USE DETAILS DURING LOCKDOWN PERIOD </h3>
 <ol>
  <li> Have you done any of the following sedentary activities in the past 24 hours (yesterday) during this COVID 19 lockdown? If yes, how many times in a day and in total how much time did you spend?
@@ -176,7 +176,7 @@
 </table>
 </li>
 </br>
-<!-- <li>
+<li>
   Please specify the no. of episodes and time spent in various Physical Activities listed below distributed across a 24-hour week day during the lockdown period.
     <table>
   <tr>
@@ -257,21 +257,23 @@
   </tr>
 </table>
 </li>
- -->
+
 </ol>
  <button id="send" type="submit" class="container">Next Page</button> 
 </br></form>
 
     
-        <script src="page3.js"></script>
+        <!-- <script src="page3.js"></script> -->
         <script>
-        function postToGoogle1(){
-            alert("Hii1");
-          var validation = true;
-          validation &= postToGoogle1();
+        function postToGoogle(){
+        	window.open("page4.html", "_top");
+        	return false;
+          //   alert("Hii1");
+          // var validation = true;
+          // validation &= postToGoogle1();
 
-          // validation &= postToGoogle2();
-          return validation;
+          // // validation &= postToGoogle2();
+          // return validation;
       }
     </script>
 
