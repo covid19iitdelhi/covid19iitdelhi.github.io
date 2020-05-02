@@ -51,7 +51,7 @@ function postToGoogle1() {
           },
           error: function(x, y, z)
             {
-            	alert("Data Colleced!");
+            	// alert("Data Colleced!");
               // $("data Colleced!").show();
               $('#div1').hide();
               // window.open("contact.html", "_top");
@@ -62,8 +62,8 @@ function postToGoogle1() {
 
 function postToGoogle2()
 	{
-	alert("calling postToGoogle2");
-	$('#div2').hide();
+	// alert("calling postToGoogle2");
+	// $('#div2').hide();
 	// $("data Colleced!").show();
 
     
@@ -99,7 +99,7 @@ function postToGoogle2()
                 return false;
 	}
 function postToGoogle3() {
-	alert("caaling postToGoogle3");
+	// alert("caaling postToGoogle3");
 	// $('#div3').hide();
 
  var Act3Ep1 = $("#Act3Ep1").val();
