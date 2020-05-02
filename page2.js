@@ -50,12 +50,12 @@ function postToGoogle() {
           document.getElementById("CollegeState").focus();
           return false;
         }
-        if(place == "")
-        {
-          alert('Please select one option');
-          document.getElementById("place").focus();
-          return false;
-        }
+        // if(place == "")
+        // {
+        //   alert('Please select one option');
+        //   document.getElementById("place").focus();
+        //   return false;
+        // }
         
                 $.ajax({
                     url: "https://docs.google.com/forms/d/e/1FAIpQLSe_cNCavXzTl-78Ze0c3vdr30_xMKXNgAcf8JrBMYeGNVYdVA/formResponse?",

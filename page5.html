@@ -51,7 +51,7 @@
 </li>
 <li>
   <b>Time Taken to reach your school/college/university :</b> Please answer the duration for one way :</br>
-       <input id="TimeTaken" list="intervals" name="entry.1444621572" placeholder="Select" type="text">
+       <input required id="TimeTaken" list="intervals" name="entry.1444621572" placeholder="Select" type="text">
        <datalist id="intervals">
       <option value="1-5min">
       <option value="6-10min">
@@ -73,28 +73,27 @@
   <li>
     Household Size? ( includes all family members staying with you during COVID 19)
     <ul>
-      <li>No of Children below 13 years : <input id="people1" type="number" min='0'>  </li>
-      <li>No of Adults between 13-60 : <input id="people2" type="number" min='0'>  </li>
-      <li>No of Elderly members above 60 : <input id="people3" type="number" min='0'>  </li>
+      <li>No of Children below 13 years : <input required id="people1" type="number" min='0'>  </li>
+      <li>No of Adults between 13-60 : <input required id="people2" type="number" min='0'>  </li>
+      <li>No of Elderly members above 60 : <input required id="people3" type="number" min='0'>  </li>
     </ul>
   </li>
  <li>
   What is your gender?
-  <input id="gender" type="text" list="genders" name="entry.234" placeholder="Select">
+  <input required id="gender" type="text" list="genders" name="entry.234" placeholder="Select">
   <datalist id="genders">
     <option value="Male">
     <option value="Female">
-    <option value="Prefer not to say">
   </datalist>
  </li>
  <li>
   Completed Age? (Please provide year of birth) </br>
-  <input id="age" type="text" name="entry.2345" placeholder="Age">
+  <input required id="age" type="text" name="entry.2345" placeholder="Age">
  </li>
 
  <li>
   Highest Completed Educational Degree?</br>
-  <input id="degree" type="text" list="degrees" name="entry.2345" placeholder="Select">
+  <input required id="degree" type="text" list="degrees" name="entry.2345" placeholder="Select">
   <datalist id="degrees">
     <option value="10th">
     <option value="12th">
@@ -106,20 +105,19 @@
  </li>
  <li>
   Your Marital Status?
-  <input id="marital" type="text" list="maritallist" name="entry.234" placeholder="Select">
+  <input required id="marital" type="text" list="maritallist" name="entry.234" placeholder="Select">
   <datalist id="maritallist">
     <option value="Single">
     <option value="Married">
     <option value="Widowed">
     <option value="Divorced/Separated">
-    <option value="Prefer not to answer">
   </datalist>
 	</li>
 	<li>
   Present Employment Status of your Parents?</br>
   <ul>
-    <li> Father : <input id="Fstatus" type="text" list="employments" name="entry.12345" placeholder="Select"></li></br>
-    <li> Mother : <input id="Mstatus" type="text" list="employments" name="entry.12345" placeholder="Select"></li>
+    <li> Father : <input required id="Fstatus" type="text" list="employments" name="entry.12345" placeholder="Select"></li></br>
+    <li> Mother : <input required id="Mstatus" type="text" list="employments" name="entry.12345" placeholder="Select"></li>
     <datalist id="employments">
       <option value="Full Time Employed(Government)">
       <option value="Full Time Employed(Private)">
@@ -134,7 +132,7 @@
  </li>
 
  <li> Household Income Per Month (in Indian Rupees)?</br>
-  <input type="text" id="income" list="incomerange" name="entry.234" placeholder="Select">
+  <input required type="text" id="income" list="incomerange" name="entry.234" placeholder="Select">
   <datalist id="incomerange">
     <option value="Less than 10,000">
     <option value="10,000 - 25,000">
@@ -148,10 +146,10 @@
   Household Vehicle Ownership Details</br>
   <ul>
     <li>
-      No. of Cars : <input id="cars" type="text" list="count" name="entry.23423" placeholder="Select"></li>
-      <li> No. of 2 Wheelers (Bike) : <input id="bikes" type="text" list="count" name="entry.23423" placeholder="Select"></li>
-      <li> No. of Bicycles : <input id="bicycles" type="text" list="count" name="entry.23423" placeholder="Select"></li>
-      <li> Other Vehicles eg. Auto : <input id="auto" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+      No. of Cars : <input required id="cars" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+      <li> No. of 2 Wheelers (Bike) : <input required id="bikes" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+      <li> No. of Bicycles : <input required id="bicycles" type="text" list="count" name="entry.23423" placeholder="Select"></li>
+      <li> Other Vehicles eg. Auto : <input required id="auto" type="text" list="count" name="entry.23423" placeholder="Select"></li>
     </ul>
     <datalist id="count">
       <option value="0">
@@ -162,7 +160,7 @@
  </li>
  <li>
   Do you own a Driving License?
-  <input type="text" list="bool" id="license" name="entry.234" placeholder="Select">
+  <input required type="text" list="bool" id="license" name="entry.234" placeholder="Select">
   <datalist id="bool">
     <option value="Yes">
     <option value="No">
