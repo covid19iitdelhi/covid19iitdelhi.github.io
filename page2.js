@@ -1,8 +1,8 @@
 function postToGoogle() {
                 var college1 = $("#college").val();
                 var CollegeState = $("#CollegeState").val();
-                var startTime = $("#startTime").val();
-                var endTime = $("#endTime").val();
+                var startTime = $("#startTime1").val()+":"+$("#startTime2").val();
+                var endTime = $("#endTime1").val()+":"+$("#endTime2").val();
                 var inch = $("#heightinch").val();
                 if(inch == "")
                 {
@@ -10,35 +10,35 @@ function postToGoogle() {
                 }
                 var height = $("#heightfeet").val() + "\'" + inch + "\"";
                 var weight = $("#weight").val();
-                var place;// = document.getElementById("placeToTravel").value;
-                var rd1 = document.getElementById("rd1");
-                var rd2 = document.getElementById("rd2");
-                var rd3 = document.getElementById("rd3");
-                var rd4 = document.getElementById("rd4");
-                if(rd1.checked==true)
-                {
-                    place = document.getElementById("rd1").value;
-                }
-                else if(rd2.checked==true)
-                {
-                    place = document.getElementById("rd2").value;
-                }
-                else if(rd3.checked==true)
-                {
-                    place = document.getElementById("rd3").value;
-                }
-                else if(rd4.checked==true)
-                {
-                    place = document.getElementById("rd4").value;
-                }
-                else {
-                    alert("Please select one option!");
-                    return false;
-                }
+                var place = "";// = document.getElementById("placeToTravel").value;
+                // var rd1 = document.getElementById("rd1");
+                // var rd2 = document.getElementById("rd2");
+                // var rd3 = document.getElementById("rd3");
+                // var rd4 = document.getElementById("rd4");
+                // if(rd1.checked==true)
+                // {
+                //     place = document.getElementById("rd1").value;
+                // }
+                // else if(rd2.checked==true)
+                // {
+                //     place = document.getElementById("rd2").value;
+                // }
+                // else if(rd3.checked==true)
+                // {
+                //     place = document.getElementById("rd3").value;
+                // }
+                // else if(rd4.checked==true)
+                // {
+                //     place = document.getElementById("rd4").value;
+                // }
+                // else {
+                //     alert("Please select one option!");
+                //     return false;
+                // }
                 var addline1 = $("#addline1").val();
-                var addline2 = $("#addline2").val();
+                var addline2 = "";
                 var presentState = $("#presentState").val();
-                var pinCode = $("#pinCode").text();
+                var pinCode = "";
         
         if(college == ""){
           alert('Please Fill university details');
