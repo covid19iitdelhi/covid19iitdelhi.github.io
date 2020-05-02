@@ -35,7 +35,7 @@ button {
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+  border-radius: 25px;
   cursor: pointer;
   /*align-content: center;*/
   width: 100%;
@@ -44,6 +44,7 @@ button {
 button:hover {
   opacity: 0.8;
 }
+
 
 /* Main content */
 .main {
@@ -62,9 +63,9 @@ table, th, td {
 	border-collapse: collapse;
 }
 
-table {
+/*table {
 	width: 100%;
-}
+}*/
 
 button {
 	text-align: center;
@@ -72,4 +73,8 @@ button {
 
 input[type=text], input[type=number] {
 	height: 23px;
+}
+
+table td.expand, th.expand {
+	width: 50%
 }
