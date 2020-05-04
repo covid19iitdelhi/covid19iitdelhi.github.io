@@ -168,7 +168,7 @@ function postToGoogle3() {
             {
               // $("data Colleced!").show();
               // $('#div3').hide();
-              window.open("page4.html", "_top");
+              window.open("page5.html", "_top");
             }
                 });
 

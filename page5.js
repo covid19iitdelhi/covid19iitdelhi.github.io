@@ -121,7 +121,7 @@ function postToGoogle() {
             	// alert("Data Colleced2!!");
               // $("data Colleced!").show();
               // $('#div3').hide();
-              window.open("page6.html", "_top");
+              window.open("page4.html", "_top");
             }
                 });
                 // alert(timetaken);

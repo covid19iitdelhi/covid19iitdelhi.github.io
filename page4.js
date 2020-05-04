@@ -338,7 +338,7 @@ function postToGoogle3() {
             	// alert("Data Colleced2!!");
               // $("data Colleced!").show();
               // $('#div3').hide();
-              window.open("page5.html", "_top");
+              window.open("page6.html", "_top");
             }
                 });
                 return false;
